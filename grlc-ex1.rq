@@ -1,5 +1,7 @@
 #+ summary: grlc exercice 1 - GET method that retrieves all DBpedia bands
-#+ endpoint: "http://dbpedia.org/sparql"
+#+ endpoint: http://dbpedia.org/sparql
+#+ tags:
+#+   - SPARQL
 #+ method: GET
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
