@@ -1,0 +1,14 @@
+#+ summary: grlc exercice 2 - GET method that retrieves all object of a kind (by default : DBpedia bands)
+#+ endpoint: "http://dbpedia.org/sparql"
+#+ method: GET
+#+ defaults:
+#+   - type: http://dbpedia.org/ontology/Band
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?id ?v1 ?v2
+WHERE {
+  ?id a ?_type_iri.
+  ?id rdfs:label ?v1.
+  ?id foaf:depiction ?v2
+}
+LIMIT 100
