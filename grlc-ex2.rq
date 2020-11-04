@@ -1,5 +1,5 @@
 #+ summary: grlc exercice 2 - GET method that retrieves all object of a kind (by default : DBpedia bands)
-#+ endpoint: "http://dbpedia.org/sparql"
+#+ endpoint: http://dbpedia.org/sparql
 #+ method: GET
 #+ defaults:
 #+   - type: http://dbpedia.org/ontology/Band
