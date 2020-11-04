@@ -5,10 +5,14 @@
 #+   - type: http://dbpedia.org/ontology/Band
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
 SELECT DISTINCT ?id ?v1 ?v2
 WHERE {
-  ?id a ?_type_iri.
-  ?id rdfs:label ?v1.
-  ?id foaf:depiction ?v2.
-}
-LIMIT 100
+  ?id a ?_type_iri .
+  ?id rdfs:label ?v1 .
+  ?id foaf:depiction ?v2 .
+} LIMIT 100
